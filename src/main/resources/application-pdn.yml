@@ -2,9 +2,9 @@ spring:
   profiles: pdn
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/platzi-market
-    username: postgres
-    password: 12345
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
 
 server:
-  port: 8091
+  port: ${PORT}
